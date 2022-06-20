@@ -1,0 +1,58 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' type='text/css' href='/css/registerStyle.css')
+  title Register
+.main
+  .container
+    .title Student Register
+    .content
+      form#form(name='form' action='/register' method='POST')
+        .user-details
+          .formDetail
+            span.details Full Name
+            input#fullname(type='text' placeholder='Enter your name' name='fullname')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+          .formDetail
+            span.details Email
+            input#email(type='text' placeholder='Enter your email' name='email')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+          .formDetail
+            span.details Course
+            input#course(type='text' placeholder='Enter course for study' name='course')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+          .formDetail
+            span.details Phone Number
+            input#phonenumber(type='text' placeholder='Enter your number' name='phonenumber')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+          .formDetail
+            span.details Gender
+            input#gender(type='text' placeholder='Enter your gender' name='gender')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+          .formDetail
+            span.details Password
+            input#password(type='text' placeholder='Enter your password' name='password')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+          .formDetail
+            span.details Confirm Password
+            input#password2(type='text' placeholder='Confirm your password' name='password2')
+            i.fas.fa-check-circle
+            i.fas.fa-exclamation-circle
+            small Error Message
+        .button
+          input(type='submit' name='register' value='Register')
+script(src='registerScript')

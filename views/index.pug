@@ -1,0 +1,61 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Web Development
+  link(rel='stylesheet' type='text/css' href='/css/indexStyle.css')
+.main
+  .navbar
+    .icon
+      h2.logo Code School
+    .menu
+      ul
+        li
+          a(href='/index') HOME
+        li
+          a(href='/about') ABOUT
+    .search
+      input.srch(type='search' name='')
+      a(href='#')
+        button.btn Search
+  .content
+    h1
+      span Web Development Course
+    p.par
+      | Learn the best software skills to enhance your web development career.
+      br
+      |             A combination of HTML, CSS and JavaScript is the road to your dream.
+      br
+      |             We don&apos;t kill expectations we just mould them into reality.
+    button.cn(type='submit' value='JOIN US')
+      a(href='/register') JOIN US
+    form.form(name='form' action='/index' method='GET')
+      h2 Login Here
+        span.details Email
+        input(type='email' name='email' placeholder='Email ')
+        //- i.fas.fa-check-circle
+        //- i.fas.fa-exclamation-circle
+        //- small Error Message
+        span.details Password
+        input(type='password' name='password' placeholder='Password')
+        //- i.fas.fa-check-circle
+        //- i.fas.fa-exclamation-circle
+        //- small Error Message
+      button.btnn(type='submit' value='login')
+        a(href='/login') Login
+      p.link
+        | Don&apos;t have an account?
+        a(href='/register')  Sign up here 
+      p.liw Contact us at:
+      .icons
+        a(href='https://www.facebook.com/')
+          ion-icon(name='logo-facebook')
+        a(href='https://www.instagram.com/')
+          ion-icon(name='logo-instagram')
+        a(href='https://www.twitter.com/')
+          ion-icon(name='logo-twitter')
+        a(href='https://www.gmail.com/')
+          ion-icon(name='logo-google')
+script(src='https://unpkg.com/ionicons@5.4.0/dist/ionicons.js')
+script(src='indexScript')
